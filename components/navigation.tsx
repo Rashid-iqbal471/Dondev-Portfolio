@@ -8,7 +8,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 
 const Navigation = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(true)
   const [isScrolled, setIsScrolled] = useState(false)
   const pathname = usePathname()
   const isHome = pathname === "/"
@@ -27,7 +27,7 @@ const Navigation = () => {
     { name: "Projects", href: "/projects" },
     { name: "Team", href: "/team" },
     { name: "Careers", href: "/careers" },
-    { name: " Get Started", href: "/contact" },
+    { name: "Get Started", href: "/contact" },
   ]
 
   // Update the theme-nav-link color based on scroll position and page
@@ -43,8 +43,8 @@ const Navigation = () => {
         isScrolled || !isHome ? "bg-white shadow-lg" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-16">
+      <div className="w-full px-4 md:px-8 lg:px-12">
+        <div className="flex items-center justify-between h-16 w-full">
           {/* Logo */}
           <Link href="/" className="flex flex-col items-start gap-0">
             <span
@@ -64,17 +64,19 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-2">
+          <div className="hidden md:flex items-center justify-end space-x-3">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className={`${navLinkClass} ${pathname === item.href ? "active" : ""}`}
+                className={`
+                  ${navLinkClass} 
+                  ${pathname === item.href ? "active" : ""}
+                `}
               >
-                {item.name}
+                {item.name.trim()}
               </Link>
             ))}
-           
           </div>
 
           {/* Mobile Menu Button */}
@@ -89,27 +91,42 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-t shadow-lg"
-          >
-            <div className="py-4 space-y-4">
-              {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className={`block px-4 py-2 transition-colors hover:text-[#ff8e00] ${
-                    pathname === item.href ? "text-[#ff8e00]" : "text-gray-700"
-                  }`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
-          </motion.div>
+          <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0.5 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 bg-black md:hidden"
+              onClick={() => setIsOpen(false)}
+            />
+            
+            <motion.div
+              initial={{ opacity: 0, x: "100%" }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: "100%" }}
+              className="md:hidden bg-white border-l border-t border-gray-200 shadow-[-5px_5px_15px_rgba(0,0,0,0.1)] fixed top-16 right-0 max-w-[80%] w-[80%] z-50 rounded-bl-lg"
+            >
+              <div className="py-4 px-2 space-y-3">
+                {navItems.map((item, index) => (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className={`
+                      block py-1 px-4 transition-all duration-200 text-lg
+                      ${pathname === item.href 
+                        ? "text-[#ff8e00] font-medium" 
+                        : "text-gray-700 hover:text-[#ff8e00] hover:translate-x-1"
+                      }
+                      ${index === 0 && pathname !== "/" ? "" : (index === 0 ? "text-[#ff8e00] font-medium" : "")}
+                    `}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name.trim()}
+                  </Link>
+                ))}
+              </div>
+            </motion.div>
+          </>
         )}
       </div>
     </motion.nav>

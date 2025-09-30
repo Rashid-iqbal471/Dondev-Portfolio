@@ -70,10 +70,10 @@ const CounterAnimation = ({ end, label, className }: { end: number; label: strin
 }
 
 export default function HomePage() {
-  const [isVisible, setIsVisible] = useState(false)
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    setIsVisible(true)
+    setIsVisible(true);
   }, [])
 
   const services = [
@@ -231,7 +231,7 @@ export default function HomePage() {
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-4xl md:text-5xl font-bold text-black mb-8">
-                Why Choose <span className="text-[#ff8e00]">DonDevit ?</span>
+                Why Choose <span className="text-[#ff8e00]">DonDev ?</span>
               </h2>
               <div className="space-y-4">
                 {benefits.map((benefit, index) => (

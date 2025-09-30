@@ -92,3 +92,27 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .theme-nav-link {
+    @apply px-3 pt-1 pb-0 text-base font-medium transition-all duration-200 hover:text-[#ff8e00] relative;
+  }
+  
+  .theme-nav-link.active {
+    @apply text-[#ff8e00];
+  }
+  
+  .theme-nav-link.active::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-0.5 bg-[#ff8e00] transform scale-x-100 origin-bottom-left transition-transform duration-200;
+  }
+  
+  .theme-nav-link:not(.active)::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-0.5 bg-[#ff8e00] transform scale-x-0 origin-bottom-right transition-transform duration-200;
+  }
+  
+  .theme-nav-link:hover::after {
+    @apply transform scale-x-100 origin-bottom-left;
+  }
+}
