@@ -11,6 +11,7 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const pathname = usePathname()
+  const isHome = pathname === "/"
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,57 +27,62 @@ const Navigation = () => {
     { name: "Projects", href: "/projects" },
     { name: "Team", href: "/team" },
     { name: "Careers", href: "/careers" },
-    { name: "Contact", href: "/contact" },
+    { name: " Get Started", href: "/contact" },
   ]
 
-  // Check if we're on homepage to determine initial transparency
-  const isHomePage = pathname === "/"
+  // Update the theme-nav-link color based on scroll position and page
+  const navLinkClass = `theme-nav-link ${
+    isScrolled || !isHome ? "text-black" : "text-white"
+  }`
 
   return (
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled || !isHomePage ? "bg-white shadow-lg" : "bg-transparent"
+        isScrolled || !isHome ? "bg-white shadow-lg" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex flex-col items-start gap-0">
             <span
               className={`text-2xl font-bold transition-colors ${
-                isScrolled || !isHomePage ? "text-black" : "text-white"
+                isScrolled || !isHome ? "text-black" : "text-white"
               }`}
             >
               don<span className="text-[#ff8e00]">dev</span>
             </span>
+            <span
+              className={`text-sm font-medium transition-colors ${
+                isScrolled || !isHome ? "text-black" : "text-white"
+              }`}
+            >
+              Gateway to Automation
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-2">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className={`transition-colors hover:text-[#ff8e00] ${
-                  pathname === item.href ? "text-[#ff8e00]" : isScrolled || !isHomePage ? "text-gray-700" : "text-white"
-                }`}
+                className={`${navLinkClass} ${pathname === item.href ? "active" : ""}`}
               >
                 {item.name}
               </Link>
             ))}
-            <Link href="/contact">
-              <Button className="bg-[#ff8e00] hover:bg-[#e67e00] text-white">Get Started</Button>
-            </Link>
+           
           </div>
 
           {/* Mobile Menu Button */}
           <Button variant="ghost" size="sm" className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? (
-              <X className={`w-6 h-6 ${isScrolled || !isHomePage ? "text-black" : "text-white"}`} />
+              <X className={`w-6 h-6 ${isScrolled || !isHome ? "text-black" : "text-white"}`} />
             ) : (
-              <Menu className={`w-6 h-6 ${isScrolled || !isHomePage ? "text-black" : "text-white"}`} />
+              <Menu className={`w-6 h-6 ${isScrolled || !isHome ? "text-black" : "text-white"}`} />
             )}
           </Button>
         </div>
@@ -102,11 +108,6 @@ const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
-              <div className="px-4">
-                <Link href="/contact">
-                  <Button className="w-full bg-[#ff8e00] hover:bg-[#e67e00] text-white">Get Started</Button>
-                </Link>
-              </div>
             </div>
           </motion.div>
         )}

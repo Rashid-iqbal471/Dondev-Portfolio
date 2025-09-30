@@ -37,7 +37,7 @@ const projects = [
     technologies: ["Make", "PHP", "HTML", "jQuery", "Bootstrap", "Social Media APIs"],
     results: "Automated posting across 15+ platforms, reduced manual effort by 85%, increased engagement by 40%",
     client: "Digital Marketing Agencies",
-    duration: "6 weeks",
+    duration: "5 weeks",
     teamSize: "3 developers",
     rating: 4.9,
     features: [
@@ -54,12 +54,12 @@ const projects = [
     category: "Lead Generation",
     description:
       "End-to-end automated pipeline for lead enrichment that seamlessly integrates GoHighLevel, Clay, n8n, and NocoDB to create a comprehensive data management ecosystem.",
-    image: "/images/Screenshot 2025-02-02 070937.png",
+    image: "/images/GHl to nocoDb.jpg",
     technologies: ["GoHighLevel", "Clay", "n8n", "NocoDB", "Supabase", "Railway"],
     results: "95% improvement in lead data quality, automated processing of 10K+ leads monthly",
     client: "Sales & Marketing Teams",
-    duration: "8 weeks",
-    teamSize: "4 specialists",
+    duration: "6 weeks",
+    teamSize: "3 specialists",
     rating: 4.8,
     features: [
       "Automated lead data extraction",
@@ -76,12 +76,12 @@ const projects = [
     description:
       "Seamless integration workflow that automatically transfers solar project proposals from Aurora Solar to PandaDoc, enabling streamlined document generation and e-signature processes for solar installations.",
     image: "/images/pandadoc_to_aurora.png",
-    technologies: ["Make", "Aurora Solar API", "PandaDoc API", "Webhook Integration", "JSON Processing"],
+    technologies: ["n8n", "Aurora Solar API", "PandaDoc API", "Webhook Integration", "JSON Processing"],
     results: "95% reduction in manual document transfer time, automated proposal generation, seamless e-signature workflow",
     client: "Solar Energy Companies",
-    duration: "4 weeks",
+    duration: "3 weeks",
     teamSize: "2 developers",
-    rating: 4.9,
+    rating: 4.8,
     features: [
       "Automated project data transfer",
       "Dynamic document generation",
@@ -97,7 +97,7 @@ const projects = [
     description:
       "Automated invoicing system that generates monthly invoices from Monday.com project data, processes payment tracking, and integrates with accounting software for seamless financial management.",
     image: "/images/Monday.com_monthly_invoice.png",
-    technologies: ["Monday.com API", "Make", "QuickBooks Integration", "PDF Generation", "Email Automation"],
+    technologies: ["Monday.com API", "n8n", "QuickBooks Integration", "PDF Generation", "Email Automation"],
     results: "100% automated monthly invoicing, reduced billing errors by 98%, improved cash flow management",
     client: "Project Management & Consulting",
     duration: "6 weeks",
@@ -118,7 +118,7 @@ const projects = [
     description:
       "Seamless integration workflow that automatically syncs ShipStation shipping data with Monday.com project boards, enabling real-time order tracking and team collaboration for e-commerce operations.",
     image: "/images/shipstation_to_monday.com.png",
-    technologies: ["ShipStation API", "Monday.com API", "Make", "Webhook Integration", "Real-time Sync"],
+    technologies: ["ShipStation API", "Monday.com API", "n8n", "Webhook Integration", "Real-time Sync"],
     results: "Real-time order tracking, 90% reduction in manual data entry, improved team collaboration",
     client: "E-commerce & Fulfillment",
     duration: "5 weeks",
@@ -142,8 +142,8 @@ const projects = [
     technologies: ["AI Response Generation", "Multi-platform Monitoring", "Sentiment Analysis", "Auto-Reply"],
     results: "24/7 customer response coverage, 95% faster response times, improved customer satisfaction",
     client: "Customer Service & Support",
-    duration: "7 weeks",
-    teamSize: "4 developers",
+    duration: "6 weeks",
+    teamSize: "3 developers",
     rating: 4.9,
     features: [
       "Multi-platform monitoring",
@@ -160,7 +160,7 @@ const projects = [
     description:
       "Innovative WhatsApp-based order management system that uses advanced NLP to process text and voice orders, creating seamless customer experiences with automated confirmations.",
     image: "/images/qbo-2.png",
-    technologies: ["2Chat", "n8n", "Trello", "NLP", "WhatsApp API", "Voice Processing"],
+    technologies: ["2Chat", "Make", "Trello", "NLP", "WhatsApp API", "Voice Processing"],
     results: "Streamlined order process, 65% faster order processing, 40% increase in customer satisfaction",
     client: "Restaurants & E-commerce",
     duration: "6 weeks",
@@ -227,7 +227,7 @@ const projects = [
     technologies: ["Python Flask", "OpenAI GPT API", "Google Slides API", "Bootstrap 5", "jQuery"],
     results: "AI-powered presentation creation, professional templates, direct Google Slides integration",
     client: "Content Creators & Businesses",
-    duration: "8 weeks",
+    duration: "4 weeks",
     teamSize: "3 developers",
     rating: 4.8,
     features: [
@@ -245,10 +245,10 @@ const projects = [
     description:
       "Advanced AI-powered system for detecting, analyzing, and monitoring phone calls with real-time processing capabilities and fraud detection features.",
     image: "/images/AI_Call_Classifier.png",
-    technologies: ["Python", "Machine Learning", "Audio Analysis APIs", "Real-time Processing"],
+    technologies: ["Python", "Machine Learning", "Audio Analysis APIs", "Zapier", "Real-time Processing"],
     results: "Real-time call analysis, fraud detection, comprehensive monitoring dashboard",
     client: "Call Centers & Security",
-    duration: "10 weeks",
+    duration: "8 weeks",
     teamSize: "4 specialists",
     rating: 4.9,
     features: [
@@ -266,10 +266,10 @@ const projects = [
     description:
       "Comprehensive online pizza ordering system with real-time tracking, customization options, and delivery management platform.",
     image: "/images/promise_pizza.jpg",
-    technologies: ["Web Framework", "Payment Gateway", "Order Management", "GPS Tracking"],
+    technologies: ["Web Framework", "Payment Gateway", "Order Management", "Zapier", "GPS Tracking"],
     results: "Complete pizza ordering solution, real-time tracking, customer management",
     client: "Food & Restaurant Industry",
-    duration: "12 weeks",
+    duration: "8 weeks",
     teamSize: "5 developers",
     rating: 4.7,
     features: [
@@ -311,8 +311,8 @@ const projects = [
     technologies: ["Healthcare Framework", "HIPAA Compliance", "Database Security", "Billing Integration"],
     results: "Complete medical practice management, secure patient records, automated scheduling",
     client: "Healthcare Providers",
-    duration: "14 weeks",
-    teamSize: "6 specialists",
+    duration: "10 weeks",
+    teamSize: "5 specialists",
     rating: 4.9,
     features: [
       "Doctor profiles & scheduling",
@@ -332,7 +332,7 @@ const projects = [
     technologies: ["AI Voice Synthesis", "Natural Language Processing", "Machine Learning", "Interactive UI"],
     results: "Personalized learning experiences, voice-powered training, adaptive skill assessment",
     client: "Educational & Corporate Training",
-    duration: "16 weeks",
+    duration: "12 weeks",
     teamSize: "5 specialists",
     rating: 4.8,
     features: [
@@ -368,7 +368,7 @@ export default function ProjectsPage() {
     selectedCategory === "All" ? projects : projects.filter((project) => project.category === selectedCategory)
 
   return (
-    <div className="min-h-screen bg-white pt-20">
+    <div className="min-h-screen bg-white pt-16">
       {/* Header */}
       <section className="py-20 bg-gradient-to-r from-black to-gray-900 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
@@ -403,23 +403,31 @@ export default function ProjectsPage() {
       </section>
 
       {/* Filter Section */}
-      <section className="py-12 bg-gray-50 sticky top-20 z-40 border-b">
+      <section className="filter-section py-4 sticky top-16 z-40">
         <div className="container mx-auto px-6">
           <div className="flex flex-wrap justify-center gap-3">
-            {categories.map((category) => (
-              <Button
+            {categories.map((category, index) => (
+              <motion.div
                 key={category.name}
-                variant={selectedCategory === category.name ? "default" : "outline"}
-                onClick={() => setSelectedCategory(category.name)}
-                className={`transition-all duration-300 ${
-                  selectedCategory === category.name
-                    ? "bg-[#ff8e00] hover:bg-[#e67e00] text-white shadow-lg"
-                    : "border-[#ff8e00] text-[#ff8e00] hover:bg-[#ff8e00] hover:text-white"
-                }`}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: index * 0.05 }}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
               >
-                {category.icon}
-                <span className="ml-2">{category.name}</span>
-              </Button>
+                <Button
+                  variant="outline"
+                  onClick={() => setSelectedCategory(category.name)}
+                  className={`filter-button h-9 px-4 py-2 text-sm font-medium rounded-full ${
+                    selectedCategory === category.name ? "active" : ""
+                  }`}
+                >
+                  <span className="flex items-center gap-2">
+                    {category.icon}
+                    <span className="hidden sm:inline">{category.name}</span>
+                  </span>
+                </Button>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -461,14 +469,7 @@ export default function ProjectsPage() {
                         <Star className="w-3 h-3 text-yellow-500 fill-current" />
                         <span className="text-xs font-semibold">{project.rating}</span>
                       </div>
-                      <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <Button
-                          onClick={() => setSelectedProject(project)}
-                          className="w-full bg-[#ff8e00] hover:bg-[#e67e00] text-white"
-                        >
-                          View Details <ArrowRight className="w-4 h-4 ml-2" />
-                        </Button>
-                      </div>
+
                     </div>
                     <CardContent className="p-6">
                       <h3 className="text-xl font-bold text-black mb-3 group-hover:text-[#ff8e00] transition-colors">
@@ -522,7 +523,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* Success Metrics */}
-      <section className="py-20 bg-gradient-to-r from-gray-50 to-white">
+      <section className="py-20 bg-gradient-to-r from-gray-50 to-gray-50">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -550,8 +551,7 @@ export default function ProjectsPage() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="text-center p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow"
-              >
+                className="text-center p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl hover:shadow-black/40 transition-shadow"              >
                 <div className="text-4xl mb-4">{stat.icon}</div>
                 <div className="text-3xl font-bold text-[#ff8e00] mb-2">{stat.metric}</div>
                 <div className="text-gray-600">{stat.label}</div>
@@ -568,7 +568,7 @@ export default function ProjectsPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50"
+            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-[9999]"
             onClick={() => setSelectedProject(null)}
           >
             <motion.div
@@ -652,15 +652,7 @@ export default function ProjectsPage() {
                   <p className="text-gray-700">{selectedProject.results}</p>
                 </div>
 
-                <div className="flex justify-between items-center">
-                  <div>
-                    <h4 className="font-semibold text-black">Client</h4>
-                    <p className="text-gray-600">{selectedProject.client}</p>
-                  </div>
-                  <Button className="bg-[#ff8e00] hover:bg-[#e67e00] text-white px-6 py-2">
-                    Start Similar Project
-                  </Button>
-                </div>
+
               </div>
             </motion.div>
           </motion.div>
