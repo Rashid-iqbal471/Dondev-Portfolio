@@ -606,7 +606,7 @@ export default function ContactPage() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.8 }}
-              className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-8 text-gray-400 text-sm"
+              className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-8 text-gray-400 text-sm "
             >
               <div className="flex items-center">
                 <div className="w-8 h-8 bg-gradient-to-r from-[#ff8e00] to-[#e67e00] rounded-full flex items-center justify-center mr-3">
@@ -622,7 +622,7 @@ export default function ContactPage() {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <span>24 Hour Response</span>
+                <span>24Hour Response</span>
               </div>
               <div className="flex items-center">
                 <div className="w-8 h-8 bg-gradient-to-r from-[#ff8e00] to-[#e67e00] rounded-full flex items-center justify-center mr-3">
@@ -630,7 +630,7 @@ export default function ContactPage() {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <span>No Long-term Contracts</span>
+                <span>Limited Contracts</span>
               </div>
             </motion.div>
           </motion.div>

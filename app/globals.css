@@ -1100,7 +1100,7 @@ nav {
 /* Large Desktop (1025px+) */
 @media (min-width: 1025px) {
   .container {
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
     padding-left: 2rem;
     padding-right: 2rem;

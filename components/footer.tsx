@@ -15,11 +15,11 @@ const Footer = () => {
       { name: "Lead Generation Systems", href: null },
       { name: "Social Media Automation", href: null },
     ],
-    Company: [
-      { name: "Our Team", href: "/team" },
-      { name: "Careers", href: "/careers" },
-      { name: "Contact Us", href: "/contact" },
-    ],
+    // Company: [
+    //   { name: "Our Team", href: "/team" },
+    //   { name: "Careers", href: "/careers" },
+    //   { name: "Contact Us", href: "/contact" },
+    // ],
     Resources: [
       { name: "Portfolio", href: "/projects" },
       { name: "Case Studies", href: null },
@@ -99,7 +99,7 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: (index + 1) * 0.1 }}
               className="text-center sm:text-left"
             >
-              <h3 className="text-lg font-semibold mb-6 text-white">{category}</h3>
+              <h3 className="text-lg font-semibold mb-6 text-white ">{category}</h3>
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link.name}>
@@ -164,10 +164,6 @@ const Footer = () => {
             <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
               <div className="text-gray-400">
                 © {currentYear} <span className="text-orange-500 font-semibold">DonDev</span>. All rights reserved.
-              </div>
-              <div className="hidden sm:block w-px h-4 bg-gray-700"></div>
-              <div className="text-sm text-gray-500 text-center sm:text-left">
-                Crafted with ❤️ in Pakistan
               </div>
             </div>
 

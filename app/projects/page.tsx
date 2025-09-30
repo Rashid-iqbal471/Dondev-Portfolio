@@ -244,7 +244,7 @@ const projects = [
     category: "AI Solutions",
     description:
       "Advanced AI-powered system for detecting, analyzing, and monitoring phone calls with real-time processing capabilities and fraud detection features.",
-    image: "/images/compressed.jpg",
+    image: "/images/AI_Call_Classifier.png",
     technologies: ["Python", "Machine Learning", "Audio Analysis APIs", "Zapier", "Real-time Processing"],
     results: "Real-time call analysis, fraud detection, comprehensive monitoring dashboard",
     client: "Call Centers & Security",
