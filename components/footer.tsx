@@ -49,7 +49,10 @@ const Footer = () => {
       
       <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-12 pb-20 md:pb-16 lg:pb-12 relative min-h-fit w-full">
         {/* Top Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8 mb-6 md:mb-8">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-1 mb-6 md:mb-8 border-2 border-red-400">
+         */}
+         <div className="flex flex-wrap justify-between gap-6 md:gap-8 mb-6 md:mb-8">
+ 
           {/* Company Info */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -59,7 +62,7 @@ const Footer = () => {
           >
             <div className="mb-6">
               <h2 className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-orange-400 bg-clip-text text-transparent mb-2">
-                DonDev
+                dondev
               </h2>
               <p className="text-gray-400 text-lg leading-relaxed max-w-md mx-auto sm:mx-0">
                 Transforming businesses through intelligent automation and innovative digital solutions. 
@@ -69,15 +72,15 @@ const Footer = () => {
             
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 mb-6 max-w-md mx-auto sm:mx-0">
-              <div className="text-center">
+              <div className="text-cnter">
                 <div className="text-2xl font-bold text-orange-500">50+</div>
                 <div className="text-sm text-gray-400">Projects</div>
               </div>
-              <div className="text-center">
+              <div className="text-cnter">
                 <div className="text-2xl font-bold text-orange-500">98%</div>
                 <div className="text-sm text-gray-400">Success Rate</div>
               </div>
-              <div className="text-center">
+              <div className="text-cnter">
                 <div className="flex items-center justify-center mb-1">
                   <Star className="w-4 h-4 text-orange-500 fill-current" />
                   <span className="text-2xl font-bold text-orange-500 ml-1">4.9</span>
@@ -118,9 +121,7 @@ const Footer = () => {
               </ul>
             </motion.div>
           ))}
-        </div>
-
-        {/* Contact Section */}
+           {/* Contact Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -147,6 +148,9 @@ const Footer = () => {
             </div>
           </div>
         </motion.div>
+        </div>
+
+       
 
         {/* Bottom Section */}
         <motion.div

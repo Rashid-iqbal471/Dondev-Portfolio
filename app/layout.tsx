@@ -9,7 +9,8 @@ import 'leaflet/dist/leaflet.css'
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "DonDev - Gateway to Automation | Business Process Automation Agency",
+  // title: "DonDev - Gateway to Automation | Business Process Automation Agency",
+  title: "dondev ",
   description:
     "Transform your business with intelligent automation solutions. DonDev specializes in workflow optimization, lead generation systems, and business process automation using Make, Zapier, and n8n.",
   keywords:

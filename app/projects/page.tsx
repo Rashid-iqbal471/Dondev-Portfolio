@@ -54,7 +54,7 @@ const projects = [
     category: "Lead Generation",
     description:
       "End-to-end automated pipeline for lead enrichment that seamlessly integrates GoHighLevel, Clay, n8n, and NocoDB to create a comprehensive data management ecosystem.",
-    image: "/images/GHl to nocoDb.jpg",
+    image: "/images/compressed.jpg",
     technologies: ["GoHighLevel", "Clay", "n8n", "NocoDB", "Supabase", "Railway"],
     results: "95% improvement in lead data quality, automated processing of 10K+ leads monthly",
     client: "Sales & Marketing Teams",
@@ -75,7 +75,7 @@ const projects = [
     category: "Document Management",
     description:
       "Seamless integration workflow that automatically transfers solar project proposals from Aurora Solar to PandaDoc, enabling streamlined document generation and e-signature processes for solar installations.",
-    image: "/images/pandadoc_to_aurora.png",
+    image: "/images/compressed.jpg",
     technologies: ["n8n", "Aurora Solar API", "PandaDoc API", "Webhook Integration", "JSON Processing"],
     results: "95% reduction in manual document transfer time, automated proposal generation, seamless e-signature workflow",
     client: "Solar Energy Companies",
@@ -96,7 +96,7 @@ const projects = [
     category: "Content Automation",
     description:
       "Automated invoicing system that generates monthly invoices from Monday.com project data, processes payment tracking, and integrates with accounting software for seamless financial management.",
-    image: "/images/Monday.com_monthly_invoice.png",
+    image: "/images/compressed.jpg",
     technologies: ["Monday.com API", "n8n", "QuickBooks Integration", "PDF Generation", "Email Automation"],
     results: "100% automated monthly invoicing, reduced billing errors by 98%, improved cash flow management",
     client: "Project Management & Consulting",
@@ -117,7 +117,7 @@ const projects = [
     category: "E-commerce",
     description:
       "Seamless integration workflow that automatically syncs ShipStation shipping data with Monday.com project boards, enabling real-time order tracking and team collaboration for e-commerce operations.",
-    image: "/images/shipstation_to_monday.com.png",
+    image: "/images/compressed.jpg",
     technologies: ["ShipStation API", "Monday.com API", "n8n", "Webhook Integration", "Real-time Sync"],
     results: "Real-time order tracking, 90% reduction in manual data entry, improved team collaboration",
     client: "E-commerce & Fulfillment",
@@ -138,7 +138,7 @@ const projects = [
     category: "Content Automation",
     description:
       "Intelligent automation system that monitors customer feedback across multiple platforms and generates personalized responses using AI, ensuring timely and professional customer engagement.",
-    image: "/images/Coustmer Feedback Response - draft.png",
+    image: "/images/compressed.jpg",
     technologies: ["AI Response Generation", "Multi-platform Monitoring", "Sentiment Analysis", "Auto-Reply"],
     results: "24/7 customer response coverage, 95% faster response times, improved customer satisfaction",
     client: "Customer Service & Support",
@@ -159,7 +159,7 @@ const projects = [
     category: "E-commerce",
     description:
       "Innovative WhatsApp-based order management system that uses advanced NLP to process text and voice orders, creating seamless customer experiences with automated confirmations.",
-    image: "/images/qbo-2.png",
+    image: "/images/compressed.jpg",
     technologies: ["2Chat", "Make", "Trello", "NLP", "WhatsApp API", "Voice Processing"],
     results: "Streamlined order process, 65% faster order processing, 40% increase in customer satisfaction",
     client: "Restaurants & E-commerce",
@@ -180,7 +180,7 @@ const projects = [
     category: "Content Automation",
     description:
       "Advanced FastAPI-based automation service that intelligently downloads, segments, and merges video content with gameplay footage, creating engaging content for multiple social platforms.",
-    image: "/images/blambroadcast_rssfeed_tosocialmedia.png",
+    image: "/images/compressed.jpg",
     technologies: ["Python", "FastAPI", "Cloudinary", "ChatGPT", "Make.com", "JSON2Video"],
     results: "Automated video content creation, multi-platform publishing, 80% reduction in editing time",
     client: "Content Creators & Gaming Channels",
@@ -201,7 +201,7 @@ const projects = [
     category: "Web Automation",
     description:
       "Sophisticated Selenium-based automation bot with seamless Airtable integration, designed to handle complex web interactions and efficient data management across multiple platforms.",
-    image: "/images/Sync Google Sheets inventory with Trello cards - draft.png",
+    image: "/images/compressed.jpg",
     technologies: ["Python", "Selenium", "Airtable API", "Web Scraping", "Data Processing"],
     results: "Automated web interactions, 88% reduction in manual data entry, improved data accuracy by 95%",
     client: "Data Management Companies",
@@ -223,7 +223,7 @@ const projects = [
     category: "AI Solutions",
     description:
       "Transform articles and content into stunning presentations with AI assistance using ChatGPT and Google Slides API integration. Features intelligent content analysis and professional templates.",
-    image: "/images/IMG-20250630-WA0005.jpg",
+    image: "/images/compressed.jpg",
     technologies: ["Python Flask", "OpenAI GPT API", "Google Slides API", "Bootstrap 5", "jQuery"],
     results: "AI-powered presentation creation, professional templates, direct Google Slides integration",
     client: "Content Creators & Businesses",
@@ -244,7 +244,7 @@ const projects = [
     category: "AI Solutions",
     description:
       "Advanced AI-powered system for detecting, analyzing, and monitoring phone calls with real-time processing capabilities and fraud detection features.",
-    image: "/images/AI_Call_Classifier.png",
+    image: "/images/compressed.jpg",
     technologies: ["Python", "Machine Learning", "Audio Analysis APIs", "Zapier", "Real-time Processing"],
     results: "Real-time call analysis, fraud detection, comprehensive monitoring dashboard",
     client: "Call Centers & Security",
@@ -265,7 +265,7 @@ const projects = [
     category: "E-commerce",
     description:
       "Comprehensive online pizza ordering system with real-time tracking, customization options, and delivery management platform.",
-    image: "/images/promise_pizza.jpg",
+    image: "/images/compressed.jpg",
     technologies: ["Web Framework", "Payment Gateway", "Order Management", "Zapier", "GPS Tracking"],
     results: "Complete pizza ordering solution, real-time tracking, customer management",
     client: "Food & Restaurant Industry",
@@ -286,7 +286,7 @@ const projects = [
     category: "Web Development",
     description:
       "Elegant restaurant website featuring menu display, reservation system, and comprehensive customer management with event booking capabilities.",
-    image: "/images/odeon_restaurent.jpg",
+    image: "/images/compressed.jpg",
     technologies: ["Frontend Framework", "Reservation System", "Customer Management", "Google Maps"],
     results: "Professional restaurant presence, online reservations, customer engagement",
     client: "Hospitality Industry",
@@ -307,7 +307,7 @@ const projects = [
     category: "Healthcare Solutions",
     description:
       "Comprehensive medical appointment booking system with patient management, doctor scheduling, and medical records integration. HIPAA-compliant healthcare platform.",
-    image: "/images/dr_smith_finalized.jpg",
+    image: "/images/compressed.jpg",
     technologies: ["Healthcare Framework", "HIPAA Compliance", "Database Security", "Billing Integration"],
     results: "Complete medical practice management, secure patient records, automated scheduling",
     client: "Healthcare Providers",
@@ -328,7 +328,7 @@ const projects = [
     category: "AI Solutions",
     description:
       "Advanced AI-powered interactive training platform with voice synthesis, conversation agents, and personalized learning experiences for corporate and educational use.",
-    image: "/images/IMG-20250630-WA0010.jpg",
+    image: "/images/compressed.jpg",
     technologies: ["AI Voice Synthesis", "Natural Language Processing", "Machine Learning", "Interactive UI"],
     results: "Personalized learning experiences, voice-powered training, adaptive skill assessment",
     client: "Educational & Corporate Training",
@@ -370,7 +370,7 @@ export default function ProjectsPage() {
   return (
     <div className="min-h-screen bg-white pt-16">
       {/* Header */}
-      <section className="py-20 bg-gradient-to-r from-black to-gray-900 relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-r from-black to-gray-900 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-[#ff8e00] rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#ff8e00] rounded-full blur-3xl animate-pulse delay-1000"></div>
