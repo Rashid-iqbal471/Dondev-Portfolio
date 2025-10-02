@@ -12,8 +12,8 @@ const teamMembers = [
         name: "Waliya Khan",
         role: "Co-Founder & CEO",
         expertise: ["Business Strategy", "Automation Solutions", "Team Leadership"],
-        image: "/images/waliya_khan.jpg",
-        bio: "Visionary co-founder driving DonDev's mission to transform businesses through intelligent automation solutions.",
+        image: "/waliya_khan.jpg",
+        bio: "Visionary co-founder driving dondev's mission to transform businesses through intelligent automation solutions.",
         social: {
             linkedin: "https://www.linkedin.com/in/waliyakhan",
             github: "https://github.com/WaliyaKhan882",
@@ -24,7 +24,7 @@ const teamMembers = [
         name: "H. Sibghat Ullah",
         role: "Co-Founder & CTO",
         expertise: ["Automation Engineering", "System Architecture", "Technical Strategy"],
-        image: "/images/sibghat_ullah.jpg",
+        image: "/sibghat_ullah.jpg",
         bio: "Technical co-founder specializing in automation workflows using Make, Zapier, n8n, and custom backend solutions.",
         social: {
             linkedin: "https://www.linkedin.com/in/sibghat-ullah-ba",
@@ -36,7 +36,7 @@ const teamMembers = [
         name: "Hafiz Muhammad Rehan",
         role: "Lead Mobile App Developer",
         expertise: ["Flutter Development", "Android & iOS Development", "Cross-platform Apps"],
-        image: "/images/hafiz_muhammad_rehan.jpg",
+        image: "/hafiz_muhammad_rehan.jpg",
         bio: "Lead Mobile App Developer with 6+ years of expertise in Flutter and Dart, specializing in creating high-performance mobile applications for startups and large organizations.",
         social: {
             linkedin: "https://www.linkedin.com/in/rehan-jutt/",
@@ -48,7 +48,7 @@ const teamMembers = [
         name: "Rashid Iqbal",
         role: "Automation Engineer",
         expertise: ["Process Automation", "Workflow Design", "Bubble.io"],
-        image: "/images/rashid_iqbal.jpg",
+        image: "/rashid_iqbal.jpg",
         bio: "Specialist in workflow automation with expertise in Make, n8n, Zapier, and Bubble.io, helping businesses streamline processes and scale efficiently.",
         social: {
             linkedin: "https://www.linkedin.com/in/rashid-iqbal-wattoo-7bab12319",
@@ -60,7 +60,7 @@ const teamMembers = [
         name: "Waqas Ahmad",
         role: "Data Engineer",
         expertise: ["AWS", "PySpark", "Data Pipelines", "Big Data Technologies"],
-        image: "/images/waqas_ahmad.jpg",
+        image: "/waqas_ahmad.jpg",
         bio: "Data Engineer with expertise in AWS and PySpark, experienced in building data pipelines, optimizing workflows, and delivering actionable insights.",
         social: {
             linkedin: "https://www.linkedin.com/in/im-waqas-ahmad",
@@ -72,7 +72,7 @@ const teamMembers = [
         name: "Abis Hussain",
         role: "AI Engineer",
         expertise: ["Artificial Intelligence", "Machine Learning", "AI Integration"],
-        image: "/images/abis_hussain.jpg",
+        image: "/abis_hussain.jpg",
         bio: "AI Specialist developing intelligent automation solutions and AI-powered calling successful agents that streamline processes in industries.",
         social: {
             linkedin: "http://www.linkedin.com/in/abis-hussain",
@@ -117,7 +117,7 @@ export default function TeamPage() {
                             Our <span className="text-[#ff8e00]">Team</span>
                         </h1>
                         <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                            Meet the experts behind DonDev's innovative automation solutions and mobile applications
+                            Meet the experts behind dondev's innovative automation solutions and mobile applications
                         </p>
                     </motion.div>
                 </div>

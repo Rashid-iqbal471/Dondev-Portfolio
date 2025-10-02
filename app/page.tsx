@@ -150,7 +150,7 @@ export default function HomePage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               {/* Get Started Button */}
-              <div className="button-container">
+              <Link href="/contact" className="button-container">
                 <Button
                   size="lg"
                   className="bg-[#ff8e00] hover:bg-[#e67e00] text-white px-8 py-4 text-lg button-main relative overflow-hidden"
@@ -161,7 +161,7 @@ export default function HomePage() {
                     <ArrowRight className="w-5 h-5" />
                   </span>
                 </Button>
-              </div>
+              </Link>
 
               {/* View Projects Button */}
               <Link href="/projects" className="button-container">
@@ -231,7 +231,7 @@ export default function HomePage() {
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-4xl md:text-5xl font-bold text-black mb-8">
-                Why Choose <span className="text-[#ff8e00]">DonDev ?</span>
+                Why Choose <span className="text-[#ff8e00]">dondev ?</span>
               </h2>
               <div className="space-y-4">
                 {benefits.map((benefit, index) => (
@@ -260,7 +260,7 @@ export default function HomePage() {
               
               <div className="relative grid grid-cols-2 gap-6 p-8 bg-gradient-to-br from-white via-gray-50/50 to-orange-50/30 rounded-2xl border border-[#ff8e00]/10 shadow-xl">
                 {[
-                  { end: 220, label: "Projects Completed", icon: "🚀" },
+                  { end: 50, label: "Projects Completed", icon: "🚀" },
                   { end: 98, label: "Client Satisfaction", icon: "⭐" },
                   { end: 7, label: "Team Members", icon: "👥" },
                   { end: 24, label: "Support Hours", icon: "🕒" }
@@ -394,55 +394,37 @@ export default function HomePage() {
               and mobile applications. Let's discuss how we can help you achieve your goals.
             </motion.p>
 
-            {/* Email Capture Form */}
+            {/* CTA Button */}
             <motion.div 
               initial={{ opacity: 0, y: 30, scale: 0.9 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className="max-w-lg mx-auto"
+              className="flex justify-center"
             >
-              <div className="email-capture-container relative">
-                <div className="flex flex-col sm:flex-row gap-4 p-2 bg-white/5 backdrop-blur-sm rounded-2xl border border-[#ff8e00]/20 shadow-2xl">
-                  {/* Email Input */}
-                  <motion.div 
-                    className="flex-[2]"
-                    whileFocus={{ scale: 1.02 }}
-                  >
-                    <Input
-                      placeholder="Enter your email address..."
-                      className="email-input bg-white/10 border-[#ff8e00]/30 text-white placeholder:text-gray-400 h-14 text-lg rounded-xl focus:border-[#ff8e00] focus:ring-2 focus:ring-[#ff8e00]/20 transition-all duration-300"
-                    />
-                  </motion.div>
-                  
-                  {/* CTA Button */}
-                  <motion.div
-                    className="flex-shrink-0"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <button className="cta-button group relative overflow-hidden bg-gradient-to-r from-[#ff8e00] to-[#e67e00] text-white px-6 py-4 h-14 text-base font-bold rounded-xl shadow-xl transition-all duration-300 whitespace-nowrap">
-                      <div className="absolute inset-0 bg-gradient-to-r from-[#e67e00] to-[#ff8e00] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <div className="relative z-10 flex items-center">
-                        Get Free Consultation
-                        <motion.svg 
-                          className="ml-2 w-5 h-5" 
-                          fill="none" 
-                          stroke="currentColor" 
-                          viewBox="0 0 24 24"
-                          animate={{ x: [0, 3, 0] }}
-                          transition={{ duration: 1.5, repeat: Infinity }}
-                        >
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </motion.svg>
-                      </div>
-                      <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#ff8e00] to-[#e67e00] opacity-0 group-hover:opacity-30 blur-xl transition-all duration-300"></div>
-                    </button>
-                  </motion.div>
-                </div>
-                
-                {/* Glow effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#ff8e00]/20 via-[#ff8e00]/10 to-[#ff8e00]/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
-              </div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Link href="/contact">
+                  <button className="cta-button group relative overflow-hidden bg-gradient-to-r from-[#ff8e00] to-[#e67e00] text-white px-8 py-4 h-14 text-lg font-bold rounded-xl shadow-xl transition-all duration-300 whitespace-nowrap">
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#e67e00] to-[#ff8e00] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative z-10 flex items-center">
+                      Get Free Consultation
+                      <motion.svg 
+                        className="ml-2 w-5 h-5" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24"
+                        animate={{ x: [0, 3, 0] }}
+                        transition={{ duration: 1.5, repeat: Infinity }}
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </motion.svg>
+                    </div>
+                    <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#ff8e00] to-[#e67e00] opacity-0 group-hover:opacity-30 blur-xl transition-all duration-300"></div>
+                  </button>
+                </Link>
+              </motion.div>
             </motion.div>
 
             {/* Trust Indicators */}
@@ -450,11 +432,11 @@ export default function HomePage() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.8 }}
-              className="mt-12 flex flex-wrap items-center justify-center gap-6 text-gray-400 text-sm"
+              className="mt-12 flex flex-col sm:flex-row items-start sm:items-center justify-center gap-4 sm:gap-6 text-gray-400 text-sm"
             >
-              <div className="flex items-center">
+              <div className="flex items-center w-full sm:w-auto justify-start">
                 <motion.div 
-                  className="w-6 h-6 bg-gradient-to-r from-[#ff8e00] to-[#e67e00] rounded-full flex items-center justify-center mr-2"
+                  className="w-6 h-6 bg-gradient-to-r from-[#ff8e00] to-[#e67e00] rounded-full flex items-center justify-center mr-3 flex-shrink-0"
                   whileHover={{ scale: 1.1, rotate: 360 }}
                   transition={{ duration: 0.3 }}
                 >
@@ -464,9 +446,9 @@ export default function HomePage() {
                 </motion.div>
                 <span>100% Free Consultation</span>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center w-full sm:w-auto justify-start">
                 <motion.div 
-                  className="w-6 h-6 bg-gradient-to-r from-[#ff8e00] to-[#e67e00] rounded-full flex items-center justify-center mr-2"
+                  className="w-6 h-6 bg-gradient-to-r from-[#ff8e00] to-[#e67e00] rounded-full flex items-center justify-center mr-3 flex-shrink-0"
                   whileHover={{ scale: 1.1, rotate: 360 }}
                   transition={{ duration: 0.3 }}
                 >
@@ -476,9 +458,9 @@ export default function HomePage() {
                 </motion.div>
                 <span>Quick 24hr Response</span>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center w-full sm:w-auto justify-start">
                 <motion.div 
-                  className="w-6 h-6 bg-gradient-to-r from-[#ff8e00] to-[#e67e00] rounded-full flex items-center justify-center mr-2"
+                  className="w-6 h-6 bg-gradient-to-r from-[#ff8e00] to-[#e67e00] rounded-full flex items-center justify-center mr-3 flex-shrink-0"
                   whileHover={{ scale: 1.1, rotate: 360 }}
                   transition={{ duration: 0.3 }}
                 >

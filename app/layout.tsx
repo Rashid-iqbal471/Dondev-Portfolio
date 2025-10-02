@@ -9,7 +9,7 @@ import 'leaflet/dist/leaflet.css'
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "DonDev - Gateway to Automation | Business Process Automation Agency",
+  title: "DonDev - Gateway to Automation",
   description:
     "Transform your business with intelligent automation solutions. DonDev specializes in workflow optimization, lead generation systems, and business process automation using Make, Zapier, and n8n.",
   keywords:
@@ -18,27 +18,26 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/favicon.jpg", sizes: "32x32", type: "image/jpeg" },
     ],
   },
   openGraph: {
-    title: "DonDev - Gateway to Automation",
+    title: "dondev - Gateway to Automation",
     description: "Transform your business with intelligent automation solutions and workflow optimization",
     url: "https://dondev.com",
-    siteName: "DonDev",
+    siteName: "dondev ",
     type: "website",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "DonDev - Gateway to Automation",
+        alt: "dondev - Gateway to Automation",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "DonDev - Gateway to Automation",
+    title: "dondev - Gateway to Automation",
     description: "Transform your business with intelligent automation solutions and workflow optimization",
     images: ["/og-image.png"],
   },

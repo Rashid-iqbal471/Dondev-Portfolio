@@ -28,11 +28,7 @@ const Footer = () => {
     ],
   }
 
-  const contactInfo = [
-    { icon: <Mail className="w-5 h-5 text-orange-500" />, text: "dondev@gmail.com" },
-    { icon: <Phone className="w-5 h-5 text-orange-500" />, text: "+92 312 4174618" },
-    { icon: <MapPin className="w-5 h-5 text-orange-500" />, text: "Lahore, Pakistan" },
-  ]
+
 
   const socialLinks = [
     { icon: <Linkedin className="w-5 h-5" />, href: "https://www.linkedin.com/company/don-dev", label: "LinkedIn" },
@@ -59,7 +55,7 @@ const Footer = () => {
           >
             <div className="mb-6">
               <h2 className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-orange-400 bg-clip-text text-transparent mb-2">
-                DonDev
+                dondev
               </h2>
               <p className="text-gray-400 text-lg leading-relaxed max-w-md mx-auto sm:mx-0">
                 Transforming businesses through intelligent automation and innovative digital solutions. 
@@ -68,7 +64,7 @@ const Footer = () => {
             </div>
             
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 mb-6 max-w-md mx-auto sm:mx-0">
+            <div className="grid grid-cols-3 gap-4 mb-4 max-w-md mx-auto sm:mx-0">
               <div className="text-center">
                 <div className="text-2xl font-bold text-orange-500">50+</div>
                 <div className="text-sm text-gray-400">Projects</div>
@@ -83,6 +79,22 @@ const Footer = () => {
                   <span className="text-2xl font-bold text-orange-500 ml-1">4.9</span>
                 </div>
                 <div className="text-sm text-gray-400">Client Rating</div>
+              </div>
+            </div>
+            
+            {/* Contact Info */}
+            <div className="space-y-2 max-w-md mx-auto sm:mx-0">
+              <div className="flex items-center justify-center sm:justify-start text-gray-300">
+                <Mail className="w-4 h-4 text-orange-500 mr-2" />
+                <span className="text-sm">dondevofficial@gmail.com</span>
+              </div>
+              <div className="flex items-center justify-center sm:justify-start text-gray-300">
+                <Phone className="w-4 h-4 text-orange-500 mr-2" />
+                <span className="text-sm">+92 312 4174618</span>
+              </div>
+              <div className="flex items-center justify-center sm:justify-start text-gray-300">
+                <MapPin className="w-4 h-4 text-orange-500 mr-2" />
+                <span className="text-sm">Lahore, Pakistan</span>
               </div>
             </div>
           </motion.div>
@@ -120,34 +132,6 @@ const Footer = () => {
           ))}
         </div>
 
-        {/* Contact Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="bg-gradient-to-r from-gray-800/50 to-gray-900/50 rounded-xl sm:rounded-2xl p-4 sm:p-6 backdrop-blur-sm border border-gray-700/50 mb-6 sm:mb-8"
-        >
-          <div className="grid grid-cols-1 gap-6">
-            <div className="text-center sm:text-center md:text-left">
-              <h3 className="text-xl sm:text-2xl font-semibold mb-3 text-orange-500">Get In Touch</h3>
-              <p className="text-gray-400 mb-4">Ready to transform your business? Let's discuss your project.</p>
-            </div>
-            <div className="grid grid-cols-1 gap-4">
-              {contactInfo.map((item, idx) => (
-                <div key={idx} className="flex flex-col sm:flex-row items-center text-center sm:text-left sm:items-start space-y-3 sm:space-y-0 sm:space-x-4 p-4 bg-black/30 rounded-lg hover:bg-black/50 transition-colors cursor-pointer group">
-                  <div className="p-3 bg-orange-500/20 rounded-lg group-hover:bg-orange-500/30 transition-colors flex-shrink-0">
-                    {item.icon}
-                  </div>
-                  <div className="flex-1">
-                    <div className="text-sm text-gray-400 mb-1">{idx === 0 ? 'Email' : idx === 1 ? 'Phone' : 'Location'}</div>
-                    <div className="text-white font-medium">{item.text}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </motion.div>
-
         {/* Bottom Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -159,12 +143,9 @@ const Footer = () => {
             {/* Left side - Company info */}
             <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
               <div className="text-gray-400">
-                © {currentYear} <span className="text-orange-500 font-semibold">DonDev</span>. All rights reserved.
+                © {currentYear} <span className="text-orange-500 font-semibold">dondev</span>. All rights reserved.
               </div>
-              <div className="hidden sm:block w-px h-4 bg-gray-700"></div>
-              <div className="text-sm text-gray-500 text-center sm:text-left">
-                Crafted with ❤️ in Pakistan
-              </div>
+              
             </div>
 
             {/* Center - Social Links */}

@@ -70,26 +70,26 @@ export default function ContactPage() {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      details: "dondev@gmail.com",
-      description: "Send us an email anytime",
+      details: "dondevofficial@gmail.com",
+
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Phone",
       details: "+92 312 4174618",
-      description: "Mon-Fri from 8am to 6pm",
+    
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Office",
       details: "Lahore, Pakistan",
-      description: "Remote-first company",
+    
     },
     {
       icon: <Clock className="w-6 h-6" />,
       title: "Response Time",
       details: "Within 24 hours",
-      description: "We'll get back to you quickly",
+    
     },
   ]
 
@@ -100,7 +100,7 @@ export default function ContactPage() {
         <div className="container mx-auto px-6 text-center">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              Contact <span className="text-ff8e00">Us</span>
+              Contact  <span className="text-[#ff8e00]">US</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Ready to transform your business with automation? Let's discuss your project and explore how we can help.
@@ -227,7 +227,7 @@ export default function ContactPage() {
                       <Button
                         type="submit"
                         disabled={isLoading}
-                        className="w-full bg-ff8e00 hover:bg-ff8e00 text-white py-3 text-lg"
+                        className="w-full bg-[#ff8e00] hover:bg-[#e67e00] text-white py-3 text-lg font-semibold transition-colors duration-300"
                       >
                         {isLoading ? (
                           <div className="flex items-center">
@@ -262,7 +262,7 @@ export default function ContactPage() {
                   <span className="text-[#ff8e00] font-semibold text-sm uppercase tracking-wider">Contact</span>
                 </div>
                 <h2 className="text-3xl font-bold text-black mb-8">
-                  Get in <span className="text-[#ff8e00]">Touch</span>
+                  Get in Touch
                 </h2>
                 <p className="text-lg text-gray-600 mb-8">
                   We're here to help you transform your business with automation. Reach out to us through any of the
@@ -310,19 +310,10 @@ export default function ContactPage() {
                               <p className="text-[#ff8e00] font-semibold mb-2 text-lg group-hover:text-[#e67e00] transition-colors duration-300">
                                 {info.details}
                               </p>
-                              <p className="text-gray-600 text-sm leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
-                                {info.description}
-                              </p>
+                              
                             </div>
                             
-                            {/* Arrow indicator */}
-                            <div className="opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-2 group-hover:translate-x-0">
-                              <div className="w-6 h-6 bg-gradient-to-r from-[#ff8e00] to-[#e67e00] rounded-full flex items-center justify-center">
-                                <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                </svg>
-                              </div>
-                            </div>
+
                           </div>
                           
                           {/* Decorative bottom element */}
@@ -377,13 +368,11 @@ export default function ContactPage() {
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg text-black mb-1">Dondev Office</h3>
+                    <h3 className="font-bold text-lg text-black mb-1">dondev Office</h3>
                     <p className="text-gray-600 text-sm mb-2">
                       Lahore, Punjab, Pakistan
                     </p>
-                    <p className="text-[#ff8e00] font-semibold text-sm">
-                      Open Monday - Friday, 9AM - 6PM
-                    </p>
+                    
                   </div>
                 </div>
               </div>

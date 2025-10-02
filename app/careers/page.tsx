@@ -157,7 +157,7 @@ export default function CareersPage() {
 						transition={{ duration: 0.8 }}
 					>
 						<h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-							Join <span className="text-[#ff8e00]">DonDev</span>
+							Join <span className="text-[#ff8e00]">dondev</span>
 						</h1>
 						<p className="text-xl text-gray-300 max-w-3xl mx-auto">
 							Be part of the team that's revolutionizing business automation. Build
@@ -177,7 +177,7 @@ export default function CareersPage() {
 						className="text-center mb-16"
 					>
 						<h2 className="text-4xl md:text-5xl font-bold text-black mb-8">
-							Why Work at <span className="text-[#ff8e00]">DonDev ?</span>
+							Why Work at <span className="text-[#ff8e00]">dondev ?</span>
 						</h2>
 						<p className="text-xl text-gray-600 max-w-4xl mx-auto">
 							We're building the future of business automation, and we want you to be
@@ -221,15 +221,23 @@ export default function CareersPage() {
 						className="text-center mb-16"
 					>
 						<h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
-							Open <span className="text-[#ff8e00]">Positions</span>
+							Current <span className="text-[#ff8e00]">Openings</span>
 						</h2>
-						<p className="text-xl text-gray-600 max-w-3xl mx-auto">
-							Find your next career opportunity and help us shape the future of
-							automation
-						</p>
+						<div className="bg-gray-50 border-l-4 border-[#ff8e00] p-6 rounded-lg max-w-4xl mx-auto">
+							<h3 className="text-2xl font-bold text-black mb-4">
+								No Open Positions at the Moment
+							</h3>
+							<p className="text-lg text-gray-600 mb-4">
+								We're currently not hiring, but we're always growing! We'd love to keep you in our talent network for future opportunities.
+							</p>
+							<p className="text-md text-gray-600">
+								<strong>Stay Connected:</strong> Follow us on social media or send us your resume to be the first to know about new openings that match your skills and interests.
+							</p>
+						</div>
 					</motion.div>
 
-					<div className="max-w-4xl mx-auto space-y-6">
+					{/* Future Job Templates - Hidden but preserved */}
+					<div className="hidden max-w-4xl mx-auto space-y-6">
 						{openPositions.map((job, index) => (
 							<motion.div
 								key={job.id}
@@ -415,19 +423,26 @@ export default function CareersPage() {
 						transition={{ duration: 0.8 }}
 					>
 						<h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
-							Ready to <span className="text-ff8e00">Join Us</span>?
+							Stay <span className="text-ff8e00">Connected</span>
 						</h2>
 						<p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
-							Don't see a position that fits? We're always interested in hearing from
-							talented individuals. Send us your resume and let's talk about how you
-							can contribute to our mission.
+							While we don't have any open positions right now, we're always interested in hearing from 
+							talented individuals who share our passion for automation and innovation. Send us your resume 
+							and we'll reach out when the right opportunity becomes available.
 						</p>
-						<Button
-							size="lg"
-							className="bg-ff8e00 hover:bg-orange-600 text-white px-8 py-4 text-lg"
+						<a
+							href="mailto:dondevofficial@gmail.com?subject=Join Talent Network - [Your Name]&body=Hi dondev team,%0D%0A%0D%0AI'm interested in joining your talent network and would like to be considered for future opportunities.%0D%0A%0D%0AHere's a brief overview about me:%0D%0A%0D%0AName: [Your Full Name]%0D%0APosition of Interest: [e.g., AI Engineer, Automation Specialist, etc.]%0D%0AExperience: [Brief summary of your experience]%0D%0ASkills: [Key skills relevant to automation/AI]%0D%0A%0D%0AI have attached my resume for your review. Please let me know if you need any additional information.%0D%0A%0D%0AThank you for your time and consideration.%0D%0A%0D%0ABest regards,%0D%0A[Your Name]"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="inline-block"
 						>
-							Send Your Resume
-						</Button>
+							<Button
+								size="lg"
+								className="bg-ff8e00 hover:bg-orange-600 text-white px-8 py-4 text-lg"
+							>
+								Join Our Talent Network
+							</Button>
+						</a>
 					</motion.div>
 				</div>
 			</section>

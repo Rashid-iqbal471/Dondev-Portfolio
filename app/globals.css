@@ -87,9 +87,14 @@
   animation: fadeInUp 0.6s ease-out;
 }
 
-/* Smooth scrolling */
+/* Smooth scrolling and prevent horizontal overflow */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 /* Custom scrollbar */
