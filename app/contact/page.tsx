@@ -518,7 +518,7 @@ export default function ContactPage() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight"
             >
-              Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff8e00] to-[#e67e00] animate-pulse">Get Started</span>?
+              Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff8e00] to-[#e67e00] animate-pulse">Get Started ?</span>
             </motion.h2>
 
             {/* Description */}
@@ -595,31 +595,31 @@ export default function ContactPage() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.8 }}
-              className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-8 text-gray-400 text-sm"
+              className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 text-gray-400 text-sm px-4"
             >
-              <div className="flex items-center">
-                <div className="w-8 h-8 bg-gradient-to-r from-[#ff8e00] to-[#e67e00] rounded-full flex items-center justify-center mr-3">
+              <div className="flex items-center w-full sm:w-auto">
+                <div className="w-8 h-8 bg-gradient-to-r from-[#ff8e00] to-[#e67e00] rounded-full flex items-center justify-center flex-shrink-0">
                   <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <span>Free Consultation</span>
+                <span className="ml-3">Free Consultation</span>
               </div>
-              <div className="flex items-center">
-                <div className="w-8 h-8 bg-gradient-to-r from-[#ff8e00] to-[#e67e00] rounded-full flex items-center justify-center mr-3">
+              <div className="flex items-center w-full sm:w-auto">
+                <div className="w-8 h-8 bg-gradient-to-r from-[#ff8e00] to-[#e67e00] rounded-full flex items-center justify-center flex-shrink-0">
                   <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <span>24 Hour Response</span>
+                <span className="ml-3">24 Hour Response</span>
               </div>
-              <div className="flex items-center">
-                <div className="w-8 h-8 bg-gradient-to-r from-[#ff8e00] to-[#e67e00] rounded-full flex items-center justify-center mr-3">
+              <div className="flex items-center w-full sm:w-auto">
+                <div className="w-8 h-8 bg-gradient-to-r from-[#ff8e00] to-[#e67e00] rounded-full flex items-center justify-center flex-shrink-0">
                   <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <span>No Long-term Contracts</span>
+                <span className="ml-3">No Long-term Contracts</span>
               </div>
             </motion.div>
           </motion.div>
