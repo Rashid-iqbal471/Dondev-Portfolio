@@ -29,31 +29,11 @@ import Image from "next/image"
 
 const projects = [
   // Existing automation projects...
-  {
-    id: 1,
-    title: "Social Media Automation Platform",
-    category: "Workflow Automation",
-    description:
-      "Comprehensive web application that streamlines posting workflows across multiple social media platforms with advanced scheduling, multi-account management, and detailed engagement analytics.",
-    image: "/1751743358843.png",
-    technologies: ["Make", "PHP", "HTML", "jQuery", "Bootstrap", "Social Media APIs"],
-    results: "Automated posting across 15+ platforms, reduced manual effort by 85%, increased engagement by 40%",
-    client: "Digital Marketing Agencies",
-    duration: "5 weeks",
-    teamSize: "3 developers",
-    rating: 4.9,
-    features: [
-      "Multi-platform posting automation",
-      "Advanced scheduling system",
-      "Real-time analytics dashboard",
-      "Account management interface",
-      "Engagement tracking",
-    ],
-  },
+ 
   {
     id: 2,
     title: "GHL Lead Enrichment & Data Management",
-    category: "Workflow Automation",
+    category: "Lead Generation",
     description:
       "End-to-end automated pipeline for lead enrichment that seamlessly integrates GoHighLevel, Clay, n8n, and NocoDB to create a comprehensive data management ecosystem.",
     image: "/GHl to nocoDb.jpg",
@@ -95,7 +75,7 @@ const projects = [
   {
     id: 4,
     title: "Monday.com Monthly Invoice Automation",
-    category: "Content Automation",
+    category: "Workflow Automation",
     description:
       "Automated invoicing system that generates monthly invoices from Monday.com project data, processes payment tracking, and integrates with accounting software for seamless financial management.",
     image: "/Monday.com_monthly_invoice.png",
@@ -116,7 +96,7 @@ const projects = [
   {
     id: 5,
     title: "ShipStation to Monday.com Integration",
-    category: "E-commerce",
+    category: "Workflow Automation",
     description:
       "Seamless integration workflow that automatically syncs ShipStation shipping data with Monday.com project boards, enabling real-time order tracking and team collaboration for e-commerce operations.",
     image: "/shipstation_to_monday.com.png",
@@ -373,7 +353,7 @@ const categories = [
   { name: "All", icon: <Filter className="w-4 h-4" /> },
   { name: "Workflow Automation", icon: <Cog className="w-4 h-4" /> },
   { name: "Social Media", icon: <Share2 className="w-4 h-4" /> },
-  // { name: "Lead Generation", icon: <BarChart3 className="w-4 h-4" /> },
+  { name: "Lead Generation", icon: <BarChart3 className="w-4 h-4" /> },
   { name: "Document Management", icon: <FileText className="w-4 h-4" /> },
   { name: "Content Automation", icon: <Video className="w-4 h-4" /> },
   { name: "AI Solutions", icon: <Bot className="w-4 h-4" /> },
